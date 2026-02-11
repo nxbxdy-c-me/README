@@ -1,30 +1,32 @@
-# 🛡️ Путь в Cybersecurity
+🛡️ Путь в Cybersecurity
+Репозиторий для фиксации прогресса, отчетов (write-ups) и инструментов в рамках интенсивной подготовки к позиции Junior pentester / AppSec.
 
-Репозиторий для фиксации прогресса, отчетов (write-ups) и инструментов в рамках подготовки к позиции Junior Security Researcher / AppSec.
+📅 Текущий статус
+Неделя 2: Контроль над сервером (RCE & Infrastructure) — В процессе 🟡
+🛠️ Стек и инструменты
+Proxy: Burp Suite Professional (Intruder, Repeater, Compare)
+OS: Kali Linux
+Network & Recon: Nmap, Netcat (Reverse Shells)
+Platforms: PortSwigger Academy, Root-Me, VulnHub
+Languages: Python (Automation), Bash
 
-## 📅 Текущий статус
-- Неделя 1: Веб-логика и Инъекции (В процессе)
+📈 План обучения
+Неделя Фокус Ключевые навыки Статус
+1 Web Logic & Injections SQLi, Auth Bypass, IDOR, Traversal ✅ Завершено
+2 Server Control (RCE) Command Injection, File Upload, Fuzzing 🟡 Идет
+3 Python for Security Automation, Brute-forcers, Requests ⚪ Ожидание
+4 Networks & PrivEsc Linux Root, Nmap, Metasploit, AD Basics ⚪ Ожидание
 
-## 🛠️ Стек и инструменты
-- Proxy: Burp Suite Professional
-- OS: Kali Linux
-- Platforms: PortSwigger Academy, Root-Me, VulnHub
-- Languages: Python (Automation), Bash
-
-## 📈 План обучения
-
-| Неделя | Фокус | Ключевые навыки | Статус |
-| :--- | :--- | :--- | :--- |
-| 1 | Web Logic & Injections | SQLi, Auth Bypass, IDOR, Traversal | 🟡 Идет |
-| 2 | Server Control (RCE) | Command Inj, File Upload, Fuzzing | ⚪ Ожидание |
-| 3 | Python for Security | Automation, Brute-forcers, Requests | ⚪ Ожидание |
-| 4 | Networks & PrivEsc | Linux Root, Nmap, Metasploit | ⚪ Ожидание |
-
-## 📝 Журнал активности (Неделя 1)
-- [x] SQL Injection: Практика UNION-based атак и перебор БД.
-- [x] Authentication: Обход 2FA, манипуляция сессиями, Rate Limit Bypass.
-- [x] Directory Traversal: Успешная эксплуатация на Root-Me (чтение защищенных файлов через параметры).
-- [x] Access Control (IDOR & Mass Assignment): 
-    - Эксплуатация IDOR через подмену параметров в URL.
-    - Повышение привилегий (PrivEsc) через Over-posting/Mass Assignment в JSON-запросах.
-    - Автоматизация поиска уязвимостей с помощью Burp Suite (Match and Replace).
+📝 Журнал активности
+Неделя 2: Server Control (RCE) — Текущая
+Command Injection: Мануальная эксплуатация через веб-формы, обход простых фильтров.
+Reverse Shells: Отработка проброса интерактивного шелла через nc и стабилизация терминала (Python pty).
+File Upload (RCE):
+Эксплуатация отсутствия валидации для загрузки PHP-шеллов.
+[В процессе] Обход фильтров расширений (Double Extensions, MIME-type bypass).
+Directory Traversal & Fuzzing: Использование ffuf и gobuster для поиска скрытых векторов.
+Неделя 1: Web Logic & Injections ✅
+SQL Injection: Практика UNION-based атак, извлечение данных пользователей из БД.
+Authentication: Анализ логики входа, брутфорс в Intruder, обход базовых защит.
+Directory Traversal: Успешная эксплуатация на Root-Me (чтение /etc/passwd).
+Access Control (IDOR): Подмена UID параметров, эксплуатация Mass Assignment в JSON API.
