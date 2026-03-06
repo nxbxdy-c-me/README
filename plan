@@ -1,32 +1,20 @@
-🛡️ Путь в Cybersecurity
-Репозиторий для фиксации прогресса, отчетов (write-ups) и инструментов в рамках интенсивной подготовки к позиции Junior pentester / AppSec.
+### Independent Security Researcher | Junior SOC Analyst
 
-📅 Текущий статус
-Неделя 2: Контроль над сервером (RCE & Infrastructure) — В процессе 🟡
-🛠️ Стек и инструменты
-Proxy: Burp Suite Professional (Intruder, Repeater, Compare)
-OS: Kali Linux
-Network & Recon: Nmap, Netcat (Reverse Shells)
-Platforms: PortSwigger Academy, Root-Me, VulnHub
-Languages: Python (Automation), Bash
+Experienced in banking operations with a deep passion for **Offensive Security** and **Threat Intelligence**. 
 
-📈 План обучения
-Неделя Фокус Ключевые навыки Статус
-1 Web Logic & Injections SQLi, Auth Bypass, IDOR, Traversal ✅ Завершено
-2 Server Control (RCE) Command Injection, File Upload, Fuzzing 🟡 Идет
-3 Python for Security Automation, Brute-forcers, Requests ⚪ Ожидание
-4 Networks & PrivEsc Linux Root, Nmap, Metasploit, AD Basics ⚪ Ожидание
+## 🛡️ Recent Case Study: Cycura Phishing Deconstruction
+*Successfully identified and analyzed a targeted phishing campaign (March 2026).*
+- **Static Analysis:** Performed HEX-dump analysis (**xxd**) to identify anomalous OOXML structures.
+- **Dynamic Analysis:** Verified 36 malicious indicators using **Triage** and **Hybrid Analysis**.
+- **MITRE ATT&CK Mapping:** Identified **T1003** (Credential Dumping), **T1497** (Virtualization/Sandbox Evasion), and **T1068** (Privilege Escalation).
+- **Outcome:** Verified C2 channels and facilitated the takedown of fraudulent infrastructure.
 
-📝 Журнал активности
-Неделя 2: Server Control (RCE) — Текущая
-Command Injection: Мануальная эксплуатация через веб-формы, обход простых фильтров.
-Reverse Shells: Отработка проброса интерактивного шелла через nc и стабилизация терминала (Python pty).
-File Upload (RCE):
-Эксплуатация отсутствия валидации для загрузки PHP-шеллов.
-[В процессе] Обход фильтров расширений (Double Extensions, MIME-type bypass).
-Directory Traversal & Fuzzing: Использование ffuf и gobuster для поиска скрытых векторов.
-Неделя 1: Web Logic & Injections ✅
-SQL Injection: Практика UNION-based атак, извлечение данных пользователей из БД.
-Authentication: Анализ логики входа, брутфорс в Intruder, обход базовых защит.
-Directory Traversal: Успешная эксплуатация на Root-Me (чтение /etc/passwd).
-Access Control (IDOR): Подмена UID параметров, эксплуатация Mass Assignment в JSON API.
+## 🛠️ Tech Stack & Skills
+- **Languages:** Python (Automation, Fuzzing, Log Parsing).
+- **Network:** Wireshark (Traffic analysis, Protocol identification), Nmap.
+- **Web:** PortSwigger Certified (30+ Labs solved), OWASP Top 10.
+- **System:** Linux (Bash), Windows Event Logs analysis.
+
+## 🏆 Practice & Labs
+- **VulnHub:** Kioptrix Level 1 (Root Shell via Samba 2.2.1a Buffer Overflow).
+- **PortSwigger Academy:** SQLi, Authentication, Access Control, Command Injection.
